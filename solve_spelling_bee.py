@@ -70,7 +70,12 @@ print(f"\nContains '{args.charSet[0]}':")
 for _ in validWords:
 	print(f"\t{_}")
 
-print(f"\nContains all seven letters!:")
+if len(allSevenLetters) > 1:
+	plural = 'S'
+else:
+	plural = ''
+
+print(f"\nPANGRAM{plural}!:")
 for _ in allSevenLetters:
 	print(f"\t{_}")
 
