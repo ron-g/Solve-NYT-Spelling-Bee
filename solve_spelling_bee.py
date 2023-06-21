@@ -34,6 +34,10 @@ parser.add_argument(
 
 args = parser.parse_args()
 
+if len(args.charSet) != 7:
+	print(f"charSet '{args.charSet}' doesn't have seven (7) characters. What were you thinking!?\n")
+	exit(1)
+
 the_regex = rf"^[{args.charSet}]""{4,}$"
 the_regex = re.compile(the_regex)
 
