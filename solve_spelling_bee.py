@@ -26,6 +26,7 @@ finally:
 parser = argparse.ArgumentParser(description="Suggest words for NYT's Spelling Bee.")
 
 parser.add_argument(
+	"-c",
 	"--charSet",
 	type=str,
 	default = ''.join(sample(charsLower, 7)),
