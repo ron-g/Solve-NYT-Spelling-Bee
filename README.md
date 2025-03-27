@@ -6,7 +6,7 @@ If `charSet` is not a seven character string, the script exits prematurely.
 
 The dictionary file was generated on Ubuntu 22 with
 
-```bash
+```
 cat /usr/share/dict/words | \
   tr [:upper:] [:lower:] | \
     tr -d [:punct:] | \
@@ -15,7 +15,7 @@ cat /usr/share/dict/words | \
 
 Usage:
 
-```bash
+```
 usage: solve_spelling_bee.py [-h] [-c CHARSET]
 
 Suggest words for NYT's Spelling Bee.
